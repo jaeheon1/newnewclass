@@ -8,8 +8,18 @@ public class Itamcan : MonoBehaviour
     
     void Update()
     {
-        transform.Rotate(Vector3.up*rotateSpeed*Time.deltaTime);
+        transform.Rotate(Vector3.up*rotateSpeed*Time.deltaTime,Space.World);
 
 
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.name=="Item")
+        {
+            PlayBall player = other.GetComponent<PlayBall>();
+            player.itemCount++;
+            gameObject.SetActive(false);
+        }
     }
 }

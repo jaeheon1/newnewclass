@@ -359,6 +359,7 @@
 "Assets/Scenes/Itamcan.cs"
 "Assets/Scenes/Move.cs"
 "Assets/Scenes/PlayBall.cs"
+"Assets/Scenes/PlayerBall.cs"
 -langversion:9.0
 
 /deterministic

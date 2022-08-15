@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayBall : MonoBehaviour
+public class PlayerBall : MonoBehaviour
 {
     public float JumpPower;
     bool isJump;
-
+    public int itemCount;
 
     Rigidbody rigid;
 
